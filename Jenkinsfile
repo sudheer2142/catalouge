@@ -18,12 +18,12 @@ pipeline {
                 sh 'sonar-scanner'
             }
         }
-        stage('Build') {
-            steps {
-                sh 'ls -ltr'
-                sh 'zip -r catalogue.zip ./* --exclude=.git --exclude=.zip'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         sh 'ls -ltr'
+        //         sh 'zip -r catalogue.zip ./* --exclude=.git --exclude=.zip'
+        //     }
+        // }
         // stage('Publish Artifact') {
         //     steps {
         //         nexusArtifactUploader(
