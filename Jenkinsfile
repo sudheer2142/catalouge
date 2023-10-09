@@ -57,5 +57,8 @@ pipeline {
             echo 'cleaning up workspace'
             deleteDir()
         }
+        success{
+            echo 'build is success will sent out mail'
+        }
     }
 }
